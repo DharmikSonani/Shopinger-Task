@@ -4,12 +4,15 @@ import { iOS_Device, ResponsiveSizeWp } from '../../../helpers/responsive'
 import { COLOR } from '../../../helpers/colors'
 import { UPLOAD_PRESCRIPTION_PLACEHOLDER, UPLOAD_PRESCRIPTION_TOP } from '../../../assets/assets'
 import { fontFamily } from '../../../helpers/fonts'
-import { showToast } from '../../../helpers/helper-functions'
+import { useNavigation } from '@react-navigation/native'
+import { Screens } from '../../../navigation/helper'
 
 const UploadPrescriptionCard = () => {
 
+    const navigation = useNavigation();
+
     const handleShopNowPress = useCallback(() => {
-        showToast(`Shop Now`);
+        navigation.navigate(Screens.UploadPrescriptionScreen);
     }, [])
 
     return (

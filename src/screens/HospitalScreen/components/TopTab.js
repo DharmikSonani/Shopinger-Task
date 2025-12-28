@@ -7,11 +7,15 @@ import { UPLOAD_ICON } from '../../../assets/assets'
 import { COLOR, GRADIENTCOLOR } from '../../../helpers/colors'
 import { fontFamily } from '../../../helpers/fonts'
 import LinearGradient from 'react-native-linear-gradient'
+import { useNavigation } from '@react-navigation/native'
+import { Screens } from '../../../navigation/helper'
 
 const TopTab = ({
     initialSelected = HOME_TOP_TABS[1]?.id,
     onTabChange = () => { },
 }) => {
+    const navigation = useNavigation();
+
     const [selected, setSelected] = useState(initialSelected);
 
     useEffect(() => {
@@ -19,7 +23,10 @@ const TopTab = ({
     }, [selected])
 
     const handleTabChange = useCallback(setSelected, []);
-    const handleUploadPress = useCallback(() => { }, []);
+
+    const handleUploadPress = useCallback(() => {
+        navigation.navigate(Screens.UploadPrescriptionScreen);
+    }, []);
 
     return (
         <View style={styles.container}>
