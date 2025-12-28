@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, TouchableOpacity, } from 'react-native'
 import React, { memo, } from 'react'
-import { ResponsiveSizeWp } from '../../helpers/responsive';
+import { iOS_Device, ResponsiveSizeWp } from '../../helpers/responsive';
 import { fontFamily } from '../../helpers/fonts';
 import { COLOR } from '../../helpers/colors';
 
@@ -26,7 +26,8 @@ export default TabButton = memo(({ data, onPress, focused, }) => {
 const styles = StyleSheet.create({
     TabButtonView: {
         flex: 1,
-        paddingVertical: ResponsiveSizeWp(15),
+        paddingTop: ResponsiveSizeWp(15),
+        paddingBottom: iOS_Device ? ResponsiveSizeWp(15) : ResponsiveSizeWp(5),
         alignItems: 'center',
         justifyContent: 'center',
         gap: ResponsiveSizeWp(3),

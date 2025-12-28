@@ -10,20 +10,21 @@ import {
 } from "../assets/assets";
 
 const PRODUCT_DATA_1 = {
-    title: `Orrane Body Lotion Moisturizer`,
+    name: `Orrane Body Lotion Moisturizer`,
     ratings: 3.9,
     price: 470,
     discount: 52,
 }
 
 const PRODUCT_DATA_2 = {
-    title: `Deetol Liquid 750ml`,
+    name: `Deetol Liquid 750ml`,
     image: PRODUCT_01,
     price: 390,
 }
 
 export const HOME_SCREEN_DATA = {
     notificationCount: 2,
+    profileCompleted: 80, // Percentage
     ads: [
         AD_BANNER,
         AD_BANNER,
@@ -59,8 +60,8 @@ export const HOME_SCREEN_DATA = {
     },
     offerAd: {
         icon: SBI_LOGO,
-        desc: `10% instant discount, up to 100/-\nValid once on all SBI Debit Cards.`,
-        code: `USE CODE:\nSBI100`,
+        desc: `10% instant discount, up to 100/- Valid once on all SBI Debit Cards.`,
+        code: `USE CODE\nSBI100`,
     }
 }
 

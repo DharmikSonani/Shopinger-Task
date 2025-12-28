@@ -10,6 +10,8 @@ import {
     REPORTS_ICON,
 } from "../assets/assets";
 
+export const CURRENCY_SYMBOL = '₹';
+
 export const KEYBOARD_TYPES = {
     ascii_capable: 'ascii-capable',
     decimal_pad: 'decimal-pad',
@@ -31,16 +33,19 @@ export const HOME_TOP_TABS = [
         id: `quick`,
         title: `Quick`,
         icon: QUICK_ICON,
+        aspectRatio: 1.4,
     },
     {
         id: `medical`,
         title: `Medical`,
         icon: MEDICAL_ICON,
+        aspectRatio: 0.95,
     },
     {
         id: `grocery`,
         title: `Grocery`,
         icon: GROCERY_ICON,
+        aspectRatio: 1,
     },
 ]
 
@@ -49,26 +54,31 @@ export const HOME_MENU_TABS = [
         id: `all`,
         title: `All`,
         icon: ALL_MENU_ICON,
+        scale: 1.1,
     },
     {
         id: `doctor`,
         title: `Doctor`,
         icon: DOCTOR_ICON,
+        scale: 1,
     },
     {
         id: `lab-test`,
         title: `Lab Test`,
         icon: LAB_TEST_ICON,
+        scale: 1,
     },
     {
         id: `medicines`,
         title: `Medicines`,
         icon: MEDICINES_ICON,
+        scale: 1.15,
     },
     {
         id: `reports`,
         title: `Reports`,
         icon: REPORTS_ICON,
+        scale: 1,
     },
 ]
 

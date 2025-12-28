@@ -23,6 +23,7 @@ export const PROFILE_ICON = require('./images/icons/profile-icon.png');
 export const QUICK_ICON = require('./images/icons/quick-icon.png');
 export const SCANNER_ICON = require('./images/icons/scanner-icon.png');
 export const UPLOAD_ICON = require('./images/icons/upload-icon.png');
+export const WARNING_ICON = require('./images/icons/warning-icon.png');
 
 export const BOTTOM_TAB_HOME_ICON = require('./images/icons/bottom-tab/home.png');
 export const BOTTOM_TAB_MENU_ICON = require('./images/icons/bottom-tab/menu.png');

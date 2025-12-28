@@ -24,8 +24,8 @@ export const COLOR = {
     TRANSPARANT: `rgba(0,0,0,0)`,
 
     PRIMARY: `rgba(0,119,200,1)`,
-    PRIMARY_40: `rgba(0,119,200,0.4)`,
-    PRIMARY_60: `rgba(0,119,200,0.4)`,
+    PRIMARY_20: `rgba(0,119,200,0.2)`,
+    PRIMARY_60: `rgba(0,119,200,0.6)`,
     PRIMARYLIGHT: `rgba(188,228,255,1)`,
     PRIMARYLIGHT2: `rgba(226,244,255,1)`,
     PRIMARYLIGHT3: `rgba(242,250,255,1)`,
@@ -37,10 +37,11 @@ export const COLOR = {
 
     SLAT: `rgba(49,49,49,1)`,
     SLAT2: `rgba(115,115,115,1)`,
-    SLAT3: `rgba(143,143,143,1)`,
+    SLAT3: `rgba(124,124,124,1)`,
+    SLAT4: `rgba(143,143,143,1)`,
 
     YELLOW: `rgba(255,181,0,1)`,
-    DARKRED: `rgba(230,0,0,1)`,
+    DARKRED: `rgba(231,0,0,1)`,
     RED: `rgba(255,56,20,1)`,
 }
 
@@ -49,6 +50,6 @@ export const GRADIENTCOLOR = {
 
     UPLOADBORDER: [COLOR.PRIMARY, COLOR.PRIMARYLIGHT2, `rgba(137,207,255,1)`],
 
-    MENUBACK: [COLOR.PRIMARY_40, COLOR.TRANSPARANT],
+    MENUBACK: [COLOR.PRIMARY_20, COLOR.TRANSPARANT],
     MENUBORDER: [COLOR.TRANSPARANT, COLOR.PRIMARY_60],
 }
