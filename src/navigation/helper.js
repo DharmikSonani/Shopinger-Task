@@ -8,6 +8,10 @@ export const Screens = {
     PatientScreen: `Patient Screen`,
     BarsatiScreen: `Barsati Screen`,
     UploadPrescriptionScreen: `Upload Prescription Screen`,
+    SearchMedicalCategoryScreen: `Search Medical Category Screen`,
+    DoctorProfilesScreen: `Doctor Profiles Screen`,
+    BookSlotScreen: `Book Slot Screen`,
+    PaymentScreen: `Payment Screen`,
 }
 
 export const navigationToReset = (navigation, screen) => {

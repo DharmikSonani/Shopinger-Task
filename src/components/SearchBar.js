@@ -32,14 +32,21 @@ const SearchBar = ({
           color={COLOR.BLACK}
         />
 
-        <TextInput
-          value={search}
-          onChangeText={onSearch}
-          style={styles.textInputStyle}
-          placeholder={placeholder || `Search`}
-          placeholderTextColor={COLOR.BLACK_60}
-          editable={typeof onSearchPress !== 'function' && typeof onSearch === 'function'}
-        />
+        {
+          typeof onSearchPress !== 'function' && typeof onSearch === 'function' ?
+            <TextInput
+              value={search}
+              onChangeText={onSearch}
+              style={styles.textInputStyle}
+              placeholder={placeholder || `Search`}
+              placeholderTextColor={COLOR.BLACK_60}
+              editable={typeof onSearchPress !== 'function' && typeof onSearch === 'function'}
+            />
+            :
+            <Text style={[styles.textInputStyle, { color: COLOR.BLACK_60 }]} numberOfLines={1}>
+              {placeholder || `Search`}
+            </Text>
+        }
 
         {
           showMicButton &&

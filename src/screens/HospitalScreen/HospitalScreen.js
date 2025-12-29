@@ -11,7 +11,7 @@ import { styles } from './styles';
 import LinearGradient from 'react-native-linear-gradient';
 import { GRADIENTCOLOR } from '../../helpers/colors';
 import Location from './components/Location';
-import { BELL_ICON, PERSON_ICON, PRODUCT_01, PRODUCT_03, WARNING_ICON } from '../../assets/assets';
+import { BELL_ICON, PERSON_ICON, WARNING_ICON } from '../../assets/assets';
 import SearchBar from '../../components/SearchBar';
 import TopTab from './components/TopTab';
 import AdsCarousel from './components/AdsCarousel';
@@ -26,6 +26,8 @@ const HospitalScreen = () => {
     const {
         topSpace,
         data,
+
+        handleSearchPress,
     } = useScreenHooks();
 
     return (
@@ -84,6 +86,7 @@ const HospitalScreen = () => {
                         showMicButton
                         showScanButton
                         placeholder={`Search anything on shopinger`}
+                        onSearchPress={handleSearchPress}
                     />
                 </View>
             </LinearGradient>
