@@ -46,6 +46,6 @@ const styles = StyleSheet.create({
         fontFamily: fontFamily.Regular,
         fontSize: ResponsiveSizeWp(14),
         color: COLOR.BLACK,
-        top: iOS_Device ? 0 : ResponsiveSizeWp(1),
+        top: iOS_Device ? 0 : ResponsiveSizeWp(1.5),
     },
 })

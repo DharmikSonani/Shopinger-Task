@@ -5,6 +5,8 @@ import UploadPrescriptionScreen from '../screens/UploadPrescriptionScreen/Upload
 import SearchMedicalCategoryScreen from '../screens/SearchMedicalCategoryScreen/SearchMedicalCategoryScreen';
 import DoctorProfilesScreen from '../screens/DoctorProfilesScreen/DoctorProfilesScreen';
 import BookSlotScreen from '../screens/BookSlotScreen/BookSlotScreen';
+import PaymentScreen from '../screens/PaymentScreen/PaymentScreen';
+import ConfirmationScreen from '../screens/ConfirmationScreen/ConfirmationScreen';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +27,8 @@ export const HospitalStack = () => {
             <Stack.Screen name={Screens.SearchMedicalCategoryScreen} component={SearchMedicalCategoryScreen} />
             <Stack.Screen name={Screens.DoctorProfilesScreen} component={DoctorProfilesScreen} />
             <Stack.Screen name={Screens.BookSlotScreen} component={BookSlotScreen} />
+            <Stack.Screen name={Screens.PaymentScreen} component={PaymentScreen} />
+            <Stack.Screen name={Screens.ConfirmationScreen} component={ConfirmationScreen} />
         </Stack.Navigator>
     );
 }

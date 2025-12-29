@@ -2,8 +2,8 @@ import { useCallback, useState } from "react";
 import { DOCTOR_PROFILE_SCREEN_DATA } from "../../helpers/data";
 import { useNavigation } from "@react-navigation/native";
 import { Screens } from "../../navigation/helper";
-import DoctorCard from "./components/DoctorCard";
 import { showToast } from "../../helpers/helper-functions";
+import DoctorCard from "../../components/DoctorCard";
 
 const useScreenHooks = () => {
 

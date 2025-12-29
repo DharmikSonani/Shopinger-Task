@@ -34,7 +34,7 @@ const useScreenHooks = () => {
     const handleNextPress = useCallback(() => {
         if (!selectedDate) return showToast(`Select Date`);
         if (!selectedTime) return showToast(`Select Time`);
-        navigation.navigate(Screens.PatientScreen, { data: { ...data, date: selectedDate, time: selectedTime, } });
+        navigation.navigate(Screens.PaymentScreen, { data: { ...data, date: selectedDate, time: selectedTime, } });
     }, [selectedDate, selectedTime])
 
     const handleDateChange = useCallback(setSelectedDate, [])

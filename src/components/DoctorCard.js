@@ -1,9 +1,9 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { CURRENCY_SYMBOL } from '../../../helpers/helper'
-import { COLOR } from '../../../helpers/colors'
-import { iOS_Device, ResponsiveSizeWp } from '../../../helpers/responsive'
-import { fontFamily } from '../../../helpers/fonts'
+import { CURRENCY_SYMBOL } from '../helpers/helper'
+import { COLOR } from '../helpers/colors'
+import { iOS_Device, ResponsiveSizeWp } from '../helpers/responsive'
+import { fontFamily } from '../helpers/fonts'
 
 const DoctorCard = ({
     data,

@@ -12,6 +12,7 @@ export const Screens = {
     DoctorProfilesScreen: `Doctor Profiles Screen`,
     BookSlotScreen: `Book Slot Screen`,
     PaymentScreen: `Payment Screen`,
+    ConfirmationScreen: `Confirmation Screen`,
 }
 
 export const navigationToReset = (navigation, screen) => {

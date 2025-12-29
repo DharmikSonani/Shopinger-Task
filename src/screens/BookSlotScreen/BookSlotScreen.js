@@ -11,11 +11,11 @@ import useScreenHooks from './BookSlotScreen.Hooks';
 import { styles } from './styles';
 import ScreenHeader from '../../components/ScreenHeader';
 import ActionButtons from '../../components/ActionButtons';
-import DoctorCard from './components/DoctorCard';
 import { CURRENCY_SYMBOL } from '../../helpers/helper';
 import { ResponsiveSizeWp } from '../../helpers/responsive';
 import VectorIcons from '../../helpers/vector-icons';
 import { COLOR } from '../../helpers/colors';
+import DoctorCard from '../../components/DoctorCard';
 
 const BookSlotScreen = () => {
 
