@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         borderRadius: ResponsiveSizeWp(20),
         borderColor: COLOR.SLAT4,
         borderWidth: ResponsiveSizeWp(1),
-        padding: ResponsiveSizeWp(2),
+        padding: ResponsiveSizeWp(3),
     },
     selectedRadioButton: {
         width: '100%',
