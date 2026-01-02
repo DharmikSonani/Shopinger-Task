@@ -6,5 +6,5 @@ export const getFromReducer = (reducer) => {
 }
 
 export const reducers = {
-    FriendListReducer: 'FriendListReducer',
+    AddressListReducer: 'AddressListReducer',
 }

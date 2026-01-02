@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { persistReducer } from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { FriendListReducer } from "./FriendList/FriendListReducer";
+import { AddressListReducer } from "./AddressList/AddressListReducer";
 
 const confige = {
     key: 'root',
@@ -9,7 +9,7 @@ const confige = {
 };
 
 const rootReducer = combineReducers({
-    FriendListReducer,
+    AddressListReducer,
 })
 
 export default persistRootReducer = persistReducer(confige, rootReducer);
